@@ -1,4 +1,5 @@
 /* eslint-disable import/extensions */
+/* @jest-environment jsdom */
 import Widget from '../Widget';
 
 const widget = new Widget();

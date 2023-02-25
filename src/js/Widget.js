@@ -4,7 +4,8 @@
 
 export default class Widget {
   constructor() {
-    this.container = document.getElementById('widget');
+    let widgetContainer = document.getElementById('widget');
+    this.container = widgetContainer;
     this.addTicket = this.addTicket.bind(this);
     this.elem = null;
   }
@@ -129,6 +130,4 @@ export default class Widget {
     // console.log(string);
     return string.match(/^\[?\d+\.\d+,\s?\-?\d+\.\d+\]?$/gm);
   }
-
-    
 }
