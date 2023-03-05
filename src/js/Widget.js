@@ -128,6 +128,6 @@ export default class Widget {
   /* eslint-disable */
   checkValidity(string) {
     // console.log(string);
-    return string.match(/^\[?\d+\.\d+,\s?\-?\d+\.\d+\]?$/gm);
+    return string.match(/\[?(-?[0-9]+\.[0-9]+)\s?,\s?(-?[0-9]+\.[0-9]+)\]?/gm);
   }
 }
